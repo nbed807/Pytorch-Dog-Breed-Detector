@@ -31,7 +31,7 @@ def main():
         batch_size = 8
 
         # Number of epochs to train for
-        num_epochs = 15
+        num_epochs = 4
 
         # Choose to feature extract or to finetune whole model
         feature_extract = True
@@ -249,7 +249,7 @@ def main():
 
 
         # Save the trained model to models folder
-        torch.save(model_ft, "models/" + model_name + "_scratch.pt")
+        torch.save(model_ft, "models/" + model_name + ".pt")
     
 
 
@@ -277,6 +277,7 @@ def main():
 
 
     # Load and model inference
+    model_t = ""
     model_t = input("Please enter the name of the model you trained: ")
     if model_t not in ['alexnet', 'inception', 'squeezenet', 'vgg']:
         print("Invalid model name, exiting...")
