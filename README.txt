@@ -1,5 +1,20 @@
 ##################### COMPSYS 302 Project - Dog Breed Detector #####################
 
+------------ REQUIRED PACKAGES ------------
+(Using Conda as Package Manager)
+
+Pytorch:
+conda install -c pytorch pytorch
+
+Torchvision:
+conda install -c pytorch torchvision
+
+Matplotlib:
+conda install -c conda-forge matplotlib
+
+Numpy:
+conda install -c conda-forge numpy
+
 ------------ SET UP STEPS ------------
 
 1) Download the split dataset from this Google drive link "https://drive.google.com/open?id=1FgO9cDOZTMZKK2roJi39TvLfDn4dovpl" and place the images folder into to the root.
